@@ -2,7 +2,6 @@
 import streamlit
 streamlit.title('My Parents New Healthy Diner')
 import snowflake.connector
-cffi=1.15.0
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
